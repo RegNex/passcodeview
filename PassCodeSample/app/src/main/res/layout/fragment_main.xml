@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <ImageView
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:src="@drawable/ic_pascode_lock"/>
+  <TextView
+      android:id="@+id/promptview"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Enter your Passcode"
+      android:textSize="18sp"
+      android:gravity="center"
+      android:padding="20dp"/>
+
+  <io.github.regnex.passcodeview.PassCodeView
+      android:id="@+id/pass_code_view"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:digits="4"
+      app:digit_size="30dp"
+      app:key_text_size="30sp"
+      android:padding="25dp"
+      app:empty_drawable="@drawable/empty_dot"
+      app:filled_drawable="@drawable/filled_dot"/>
+
+</LinearLayout>
