@@ -6,6 +6,7 @@ There are some customization options that can be used...
 <img src="https://developerbryte.files.wordpress.com/2018/01/gif_20180126133123114_by_gifguru.gif" width="250" /> 
 
 ## Add to build.grade (project)
+```
    dependencies {
         classpath 'com.android.tools.build:gradle:3.0.1'
         classpath 'com.github.dcendents:android-maven-gradle-plugin:1.4.1'
@@ -13,8 +14,9 @@ There are some customization options that can be used...
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
+```
 
-Add gradle dependency
+## Add gradle dependency
 ```
 ##build.gradle(app)
 dependencies {
